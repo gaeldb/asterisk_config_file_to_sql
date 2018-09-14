@@ -4,6 +4,11 @@ Script to generate SQL instruction to load Asterisk configuration from a databas
 This script transforms an Asterisk configuration file to SQL instruction in order to be used in a static Asterisk Realtime Architecture.
 See: https://wiki.asterisk.org/wiki/display/AST/Realtime+Database+Configuration
 
+## Usage
+```
+./asterisk_config_file_to_sql.pl /etc/asterisk/modules.conf
+```
+
 ## Example
 
 ```
@@ -50,11 +55,6 @@ CREATE TABLE ast_config
   CONSTRAINT ast_config_id_pk PRIMARY KEY (id)
 ) 
 WITHOUT OIDS;
-```
-
-## Usage
-```
-./asterisk_config_file_to_sql.pl /etc/asterisk/extensions.conf
 ```
 
 ## See:
