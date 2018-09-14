@@ -1,11 +1,12 @@
+#!/usr/bin/perl
+
 #
 # @Author: Gaël Barbier
 # @Date:   2018-09-14 16:41:14
 # @Last Modified by:   Gaël Barbier
-# @Last Modified time: 2018-09-14 17:47:08
+# @Last Modified time: 2018-09-14 17:51:58
 #
 
-#!/usr/bin/perl
 use Asterisk::config;
 use File::Basename;
 
