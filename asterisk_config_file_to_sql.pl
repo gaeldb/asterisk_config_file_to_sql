@@ -26,7 +26,7 @@ foreach my $sec (sort keys %{$parsed})
 		foreach my $values (@{$v})
 		{
 		    print "filename=$file cat_metric=$cat_count var_metric=$var_count category=$sec var_name=$c var_val=$values\n" if $debug;
-			print "INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ($cat_count $var_count $file $sec $c $values);\n";
+			print "INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('$cat_count', '$var_count', '$file', '$sec', '$c', '$values');\n";
 			$var_count++;
 		}
     }
