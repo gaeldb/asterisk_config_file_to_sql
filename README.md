@@ -57,5 +57,11 @@ CREATE TABLE ast_config
 WITHOUT OIDS;
 ```
 
-## See:
+## Misc
+### Install Perl Asterisk config module
+```
+sudo cpan Asterisk::config
+```
+
+### See
 * https://www.safaribooksonline.com/library/view/asterisk-the-future/9780596510480/ch12.html
