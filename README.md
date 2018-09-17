@@ -32,11 +32,11 @@ noload => chan_console.so
 is converted into:
 
 ```sql
-INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES (1 1 modules.conf modules load res_musiconhold.so);
-INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES (1 2 modules.conf modules noload pbx_gtkconsole.so);
-INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES (1 3 modules.conf modules noload chan_alsa.so);
-INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES (1 4 modules.conf modules noload chan_console.so);
-INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES (1 5 modules.conf modules autoload yes);
+INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('1', '1', 'modules.conf', 'modules', 'load', 'res_musiconhold.so');
+INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('1', '2', 'modules.conf', 'modules', 'noload', 'pbx_gtkconsole.so');
+INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('1', '3', 'modules.conf', 'modules', 'noload', 'chan_alsa.so');
+INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('1', '4', 'modules.conf', 'modules', 'noload', 'chan_console.so');
+INSERT INTO ast_config (cat_metric, var_metric, filename, category, var_name, var_val) VALUES ('1', '5', 'modules.conf', 'modules', 'autoload', 'yes');
 ```
 
 ## SQL table format
